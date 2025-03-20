@@ -1,0 +1,6 @@
+- name: home
+  link: /
+- name: friens
+  link: /friends.html
+- name: blog
+  link: /blog.html
