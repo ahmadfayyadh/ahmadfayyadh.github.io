@@ -3,7 +3,44 @@
 }
 
 .last-name {
-  color: blue;
+  color: #000000;
+}
+
+.profile-img {
+  max-width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #80b8a3;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
