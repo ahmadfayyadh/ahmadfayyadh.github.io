@@ -129,6 +129,53 @@ body {
   color: #fff;
 }
 
+/* Container untuk semua halaman */
+.container,
+.friends-container,
+.blog-container {
+  max-width: 1000px;
+  margin: 60px auto 40px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Friends styling */
+.friends-container h1 {
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.friend-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.friend-list li {
+  background-color: #7aa9ba;
+  border-left: 5px solid #6cdad8;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.friend-list li:hover {
+  transform: translateY(-2px);
+}
+
+.friend-list a {
+  color: #0056b3;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.friend-list a:hover {
+  text-decoration: underline;
+}
+
 /* Blog Styling */
 .blog-container h1 {
   font-size: 2.3rem;
