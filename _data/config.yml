@@ -1,0 +1,12 @@
+# Konfigurasi utama untuk Jekyll dan GitHub Pages
+ title: Home
+ baseurl: ""
+ baseurl: ""  
+ url: " https://ahmadfayyadh.github.io/"
+ 
+ sass:
+   sass_dir: _sass
+   style: compressed
+ 
+ theme: null
+ theme: null
