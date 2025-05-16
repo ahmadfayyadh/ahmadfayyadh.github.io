@@ -3,7 +3,6 @@ layout: posts
 title: "HTML: Link dan List"
 date: 2025-03-20
 ---
-
 Materi tentang link dan lists pada HTML
 
 Materi dasar tentang penggunaan link dan list dalam HTML.

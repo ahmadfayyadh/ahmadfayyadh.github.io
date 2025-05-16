@@ -1,0 +1,45 @@
+<p>Materi tentang Config YML</p>
+
+<p>YAML (YAML Ain’t Markup Language) adalah format data yang sering digunakan untuk konfigurasi aplikasi karena sintaksnya yang sederhana dan mudah dibaca manusia.</p>
+
+<h2 id="struktur-dasar-yaml">Struktur Dasar YAML</h2>
+
+<ul>
+  <li>Menggunakan indentasi (spasi) untuk menandai level.</li>
+  <li>Tidak menggunakan tanda kurung atau kurung kurawal.</li>
+  <li>File biasanya memiliki ekstensi <code class="language-plaintext highlighter-rouge">.yml</code> atau <code class="language-plaintext highlighter-rouge">.yaml</code>.</li>
+</ul>
+
+<h2 id="contoh-file-configyml">Contoh File config.yml</h2>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">app</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">MyApplication</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">1.0.0</span>
+  <span class="na">debug</span><span class="pi">:</span> <span class="kc">true</span>
+
+<span class="na">database</span><span class="pi">:</span>
+  <span class="na">host</span><span class="pi">:</span> <span class="s">localhost</span>
+  <span class="na">port</span><span class="pi">:</span> <span class="m">3306</span>
+  <span class="na">username</span><span class="pi">:</span> <span class="s">user</span>
+  <span class="na">password</span><span class="pi">:</span> <span class="s">pass123</span>
+
+<span class="na">logging</span><span class="pi">:</span>
+  <span class="na">level</span><span class="pi">:</span> <span class="s">INFO</span>
+  <span class="na">path</span><span class="pi">:</span> <span class="s">/var/log/myapp.log</span>
+</code></pre></div></div>
+
+<h2 id="penjelasan">Penjelasan</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">app</code>: Konfigurasi aplikasi.</li>
+  <li><code class="language-plaintext highlighter-rouge">database</code>: Konfigurasi database.</li>
+  <li><code class="language-plaintext highlighter-rouge">logging</code>: Pengaturan log.</li>
+</ul>
+
+<h2 id="catatan">Catatan</h2>
+
+<ul>
+  <li>Pastikan indentasi konsisten (biasanya 2 atau 4 spasi).</li>
+  <li>Hindari penggunaan tab.</li>
+  <li>YAML sensitif terhadap format dan spasi.</li>
+</ul>

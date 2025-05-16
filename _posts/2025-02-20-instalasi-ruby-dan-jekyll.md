@@ -3,7 +3,6 @@ layout: posts
 title: "Instalasi Ruby dan Jekyll"
 date: 2025-02-20
 ---
-
 Materi tentang Instalasi Ruby dan Jekyll
 
 # 📘 Panduan Instalasi Jekyll dan Ruby

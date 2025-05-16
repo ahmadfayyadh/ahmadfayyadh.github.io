@@ -1,4 +1,293 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-04-24T15:54:53+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">HTML: Link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-list.html" rel="alternate" type="text/html" title="HTML: Link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-list</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-list.html"><![CDATA[<p>Materi tentang link dan lists pada HTML</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-05-16T21:29:39+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Membuat Layout Menggunakan SASS/SCSS</title><link href="http://localhost:4000/2025/05/07/Membuat-Layout-SASS-SCSS.html" rel="alternate" type="text/html" title="Membuat Layout Menggunakan SASS/SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/Membuat-Layout-SASS-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/Membuat-Layout-SASS-SCSS.html"><![CDATA[<p>Materi tentang Membuat Layout Menggunakan SASS/SCSS</p>
+
+<h2 id="pengantar-sassscss">Pengantar SASS/SCSS</h2>
+
+<p>SASS (Syntactically Awesome Stylesheets) adalah preprocessor CSS yang menambahkan fitur seperti variabel, nesting, mixin, inheritance, dan lainnya. SCSS (Sassy CSS) adalah sintaks SASS yang lebih mirip CSS.</p>
+
+<p>Dengan SASS/SCSS, pengembangan layout website menjadi lebih modular, efisien, dan mudah di-maintain.</p>
+
+<h2 id="keuntungan-menggunakan-sassscss-untuk-layout">Keuntungan Menggunakan SASS/SCSS untuk Layout</h2>
+
+<ul>
+  <li><strong>Modular</strong>: Memisahkan layout ke dalam file partials.</li>
+  <li><strong>Variabel</strong>: Mempermudah pengaturan ukuran, warna, dll.</li>
+  <li><strong>Nesting</strong>: Struktur CSS lebih rapi mengikuti HTML.</li>
+  <li><strong>Mixins</strong>: Membuat template reusable untuk grid, flexbox, dll.</li>
+  <li><strong>Functions</strong>: Membuat perhitungan otomatis (misal, grid width).</li>
+</ul>
+
+<hr />
+
+<h2 id="struktur-folder-layout-scss">Struktur Folder Layout SCSS</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── scss/
+│   ├── base/
+│   ├── components/
+│   ├── layout/
+│   ├── pages/
+│   └── main.scss
+</code></pre></div></div>
+
+<ul>
+  <li><strong>base/</strong>: Reset, typography, dan global styles.</li>
+  <li><strong>components/</strong>: Button, card, alert, dll.</li>
+  <li><strong>layout/</strong>: Header, footer, sidebar, grid.</li>
+  <li><strong>pages/</strong>: Style khusus halaman.</li>
+  <li><strong>main.scss</strong>: File utama yang meng-import semua.</li>
+</ul>
+
+<hr />
+
+<h2 id="contoh-layout-scss">Contoh Layout SCSS</h2>
+
+<h3 id="1-variabel">1. Variabel</h3>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _variables.scss</span>
+<span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#3498db</span><span class="p">;</span>
+<span class="nv">$spacing-unit</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="2-grid-system-dengan-mixin">2. Grid System dengan Mixin</h3>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _grid.scss</span>
+<span class="k">@mixin</span> <span class="nf">row</span> <span class="p">{</span>
+  <span class="nl">display</span><span class="p">:</span> <span class="n">flex</span><span class="p">;</span>
+  <span class="nl">flex-wrap</span><span class="p">:</span> <span class="n">wrap</span><span class="p">;</span>
+  <span class="nl">margin-right</span><span class="p">:</span> <span class="o">-</span><span class="nv">$spacing-unit</span><span class="p">;</span>
+  <span class="nl">margin-left</span><span class="p">:</span> <span class="o">-</span><span class="nv">$spacing-unit</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span> <span class="nf">col</span><span class="p">(</span><span class="nv">$size</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nl">flex</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="nf">percentage</span><span class="p">(</span><span class="nv">$size</span> <span class="o">/</span> <span class="m">12</span><span class="p">);</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="nf">percentage</span><span class="p">(</span><span class="nv">$size</span> <span class="o">/</span> <span class="m">12</span><span class="p">);</span>
+  <span class="nl">padding-right</span><span class="p">:</span> <span class="nv">$spacing-unit</span><span class="p">;</span>
+  <span class="nl">padding-left</span><span class="p">:</span> <span class="nv">$spacing-unit</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="3-layout-header--footer">3. Layout Header &amp; Footer</h3>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// _header.scss</span>
+<span class="nc">.header</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$spacing-unit</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// _footer.scss</span>
+<span class="nc">.footer</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="nf">darken</span><span class="p">(</span><span class="nv">$primary-color</span><span class="o">,</span> <span class="m">10%</span><span class="p">);</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$spacing-unit</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="4-menggunakan-di-mainscss">4. Menggunakan di <code class="language-plaintext highlighter-rouge">main.scss</code></h3>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@import</span> <span class="s1">'variables'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">'layout/grid'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">'layout/header'</span><span class="p">;</span>
+<span class="k">@import</span> <span class="s1">'layout/footer'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="contoh-html-layout">Contoh HTML Layout</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"header"</span><span class="nt">&gt;</span>Header<span class="nt">&lt;/header&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-8"</span><span class="nt">&gt;</span>Content<span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Sidebar<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;footer</span> <span class="na">class=</span><span class="s">"footer"</span><span class="nt">&gt;</span>Footer<span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="kompilasi-sass-ke-css">Kompilasi SASS ke CSS</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sass scss/main.scss css/main.css <span class="nt">--watch</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="tips-layout-dengan-scss">Tips Layout dengan SCSS</h2>
+
+<ul>
+  <li>Gunakan <strong>variabel untuk spacing, warna, breakpoints</strong>.</li>
+  <li>Gunakan <strong>mixin untuk grid atau flexbox</strong> agar DRY (Don’t Repeat Yourself).</li>
+  <li><strong>Organisasi file SCSS dengan rapi</strong>, gunakan partial dan import.</li>
+  <li>Manfaatkan <strong>functions SASS untuk kalkulasi dinamis (misal kolom grid)</strong>.</li>
+</ul>
+
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Membuat Layout Menggunakan SASS/SCSS]]></summary></entry><entry><title type="html">Plugins</title><link href="http://localhost:4000/2025/04/24/plugins.html" rel="alternate" type="text/html" title="Plugins" /><published>2025-04-24T00:00:00+07:00</published><updated>2025-04-24T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/24/plugins</id><content type="html" xml:base="http://localhost:4000/2025/04/24/plugins.html"><![CDATA[<p>Materi tentang Plugins</p>
+
+<h2 id="pengertian-plugins">Pengertian Plugins</h2>
+
+<p>Plugins, atau disebut juga add-ons atau extensions, adalah komponen perangkat lunak yang memungkinkan suatu aplikasi atau sistem untuk menambahkan fitur atau fungsi tertentu tanpa perlu mengubah kode utama dari aplikasi tersebut. Dengan adanya plugin, pengguna maupun pengembang dapat memperluas kemampuan aplikasi secara modular dan fleksibel.</p>
+
+<p>Plugin biasanya didesain agar mudah diinstal, dihapus, maupun diperbarui, tanpa harus menyentuh langsung sistem inti. Konsep plugin sangat umum digunakan dalam berbagai platform, mulai dari browser web, software editing, game, hingga Content Management System (CMS).</p>
+
+<hr />
+
+<h2 id="fungsi-utama-plugins">Fungsi Utama Plugins</h2>
+
+<p>Beberapa fungsi utama dari penggunaan plugin meliputi:</p>
+
+<ol>
+  <li>
+    <p><strong>Menambahkan Fitur Baru</strong><br />
+Memberikan kemampuan tambahan pada aplikasi tanpa memerlukan pengembangan dari pihak pengembang utama.</p>
+  </li>
+  <li>
+    <p><strong>Personalisasi dan Kustomisasi</strong><br />
+Memungkinkan pengguna mengatur aplikasi sesuai dengan kebutuhan pribadi atau bisnisnya.</p>
+  </li>
+  <li>
+    <p><strong>Integrasi dengan Layanan Pihak Ketiga</strong><br />
+Memudahkan integrasi aplikasi dengan layanan atau sistem lain seperti API eksternal, layanan cloud, atau alat kolaborasi.</p>
+  </li>
+  <li>
+    <p><strong>Meningkatkan Efisiensi Kerja</strong><br />
+Memberikan akses cepat ke fitur-fitur yang sebelumnya tidak tersedia, sehingga mempercepat alur kerja pengguna.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="contoh-penggunaan-plugins">Contoh Penggunaan Plugins</h2>
+
+<h3 id="1-browser-web">1. Browser Web</h3>
+<ul>
+  <li><strong>AdBlock Plus</strong>: Memblokir iklan yang mengganggu.</li>
+  <li><strong>Grammarly</strong>: Membantu dalam pengecekan tata bahasa saat mengetik.</li>
+  <li><strong>LastPass</strong>: Pengelola password yang aman.</li>
+</ul>
+
+<h3 id="2-editor-teks-dan-ide">2. Editor Teks dan IDE</h3>
+<ul>
+  <li><strong>Prettier</strong>: Format kode secara otomatis.</li>
+  <li><strong>Live Server</strong>: Menyediakan live preview untuk file HTML.</li>
+  <li><strong>Emmet</strong>: Menyederhanakan penulisan kode HTML dan CSS.</li>
+</ul>
+
+<h3 id="3-cms-content-management-system">3. CMS (Content Management System)</h3>
+<ul>
+  <li><strong>Yoast SEO (WordPress)</strong>: Optimasi SEO untuk konten website.</li>
+  <li><strong>WooCommerce (WordPress)</strong>: Mengubah WordPress menjadi toko online.</li>
+  <li><strong>Security Plugins (WordFence, iThemes Security)</strong>: Melindungi situs dari ancaman keamanan.</li>
+</ul>
+
+<h3 id="4-desain-grafis-dan-multimedia">4. Desain Grafis dan Multimedia</h3>
+<ul>
+  <li><strong>Magic Bullet Looks (Adobe Premiere, After Effects)</strong>: Memberikan efek sinematik pada video.</li>
+  <li><strong>Nik Collection (Photoshop, Lightroom)</strong>: Plugin untuk editing foto profesional.</li>
+</ul>
+
+<hr />
+
+<h2 id="kelebihan-menggunakan-plugins">Kelebihan Menggunakan Plugins</h2>
+
+<ul>
+  <li><strong>Modular dan Fleksibel</strong>: Pengguna dapat memilih plugin sesuai kebutuhan.</li>
+  <li><strong>Hemat Waktu Pengembangan</strong>: Tidak perlu membangun fitur dari nol.</li>
+  <li><strong>Komunitas Aktif</strong>: Banyak plugin gratis atau berbayar yang dibuat oleh komunitas.</li>
+  <li><strong>Meningkatkan Fungsi Dasar Aplikasi</strong>: Menjadikan aplikasi lebih powerful.</li>
+</ul>
+
+<hr />
+
+<h2 id="kekurangan-menggunakan-plugins">Kekurangan Menggunakan Plugins</h2>
+
+<ul>
+  <li><strong>Konflik Antar Plugin</strong>: Bisa terjadi jika dua plugin mencoba mengatur fungsi yang sama.</li>
+  <li><strong>Pengaruh terhadap Performa</strong>: Terlalu banyak plugin dapat memperlambat kinerja aplikasi.</li>
+  <li><strong>Masalah Keamanan</strong>: Plugin yang tidak terverifikasi dapat menjadi celah keamanan.</li>
+  <li><strong>Ketergantungan pada Pihak Ketiga</strong>: Bergantung pada pengembang plugin untuk update atau perbaikan bug.</li>
+</ul>
+
+<hr />
+
+<h2 id="best-practices-dalam-penggunaan-plugins">Best Practices dalam Penggunaan Plugins</h2>
+
+<ol>
+  <li>
+    <p><strong>Seleksi Plugin dengan Bijak</strong><br />
+Gunakan hanya plugin yang benar-benar dibutuhkan dan memiliki reputasi baik.</p>
+  </li>
+  <li>
+    <p><strong>Periksa Review dan Rating</strong><br />
+Sebelum menginstal plugin, periksa ulasan pengguna lain dan pastikan plugin selalu diperbarui.</p>
+  </li>
+  <li>
+    <p><strong>Lakukan Backup Sebelum Instalasi</strong><br />
+Pastikan sistem memiliki cadangan data sebelum menambahkan plugin baru.</p>
+  </li>
+  <li>
+    <p><strong>Update Secara Berkala</strong><br />
+Perbarui plugin secara berkala untuk mendapatkan fitur baru dan patch keamanan.</p>
+  </li>
+  <li>
+    <p><strong>Pantau Performa Aplikasi</strong><br />
+Lakukan audit rutin untuk mengidentifikasi plugin yang membebani sistem atau tidak lagi relevan.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="kesimpulan">Kesimpulan</h2>
+
+<p>Plugins merupakan solusi praktis yang memperluas kemampuan aplikasi atau platform tanpa mengganggu kode dasar. Dengan pemilihan dan pengelolaan yang tepat, plugins dapat meningkatkan produktivitas dan memberikan pengalaman pengguna yang lebih baik. Namun, pengguna juga harus berhati-hati terhadap dampak negatif yang mungkin ditimbulkan seperti konflik sistem atau masalah keamanan.</p>
+
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Plugins]]></summary></entry><entry><title type="html">Config YML</title><link href="http://localhost:4000/2025/04/17/config-yml.html" rel="alternate" type="text/html" title="Config YML" /><published>2025-04-17T00:00:00+07:00</published><updated>2025-04-17T00:00:00+07:00</updated><id>http://localhost:4000/2025/04/17/config-yml</id><content type="html" xml:base="http://localhost:4000/2025/04/17/config-yml.html"><![CDATA[<p>Materi tentang Config YML</p>
+
+<p>YAML (YAML Ain’t Markup Language) adalah format data yang sering digunakan untuk konfigurasi aplikasi karena sintaksnya yang sederhana dan mudah dibaca manusia.</p>
+
+<h2 id="struktur-dasar-yaml">Struktur Dasar YAML</h2>
+
+<ul>
+  <li>Menggunakan indentasi (spasi) untuk menandai level.</li>
+  <li>Tidak menggunakan tanda kurung atau kurung kurawal.</li>
+  <li>File biasanya memiliki ekstensi <code class="language-plaintext highlighter-rouge">.yml</code> atau <code class="language-plaintext highlighter-rouge">.yaml</code>.</li>
+</ul>
+
+<h2 id="contoh-file-configyml">Contoh File config.yml</h2>
+
+<div class="language-yml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">app</span><span class="pi">:</span>
+  <span class="na">name</span><span class="pi">:</span> <span class="s">MyApplication</span>
+  <span class="na">version</span><span class="pi">:</span> <span class="s">1.0.0</span>
+  <span class="na">debug</span><span class="pi">:</span> <span class="kc">true</span>
+
+<span class="na">database</span><span class="pi">:</span>
+  <span class="na">host</span><span class="pi">:</span> <span class="s">localhost</span>
+  <span class="na">port</span><span class="pi">:</span> <span class="m">3306</span>
+  <span class="na">username</span><span class="pi">:</span> <span class="s">user</span>
+  <span class="na">password</span><span class="pi">:</span> <span class="s">pass123</span>
+
+<span class="na">logging</span><span class="pi">:</span>
+  <span class="na">level</span><span class="pi">:</span> <span class="s">INFO</span>
+  <span class="na">path</span><span class="pi">:</span> <span class="s">/var/log/myapp.log</span>
+</code></pre></div></div>
+
+<h2 id="penjelasan">Penjelasan</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">app</code>: Konfigurasi aplikasi.</li>
+  <li><code class="language-plaintext highlighter-rouge">database</code>: Konfigurasi database.</li>
+  <li><code class="language-plaintext highlighter-rouge">logging</code>: Pengaturan log.</li>
+</ul>
+
+<h2 id="catatan">Catatan</h2>
+
+<ul>
+  <li>Pastikan indentasi konsisten (biasanya 2 atau 4 spasi).</li>
+  <li>Hindari penggunaan tab.</li>
+  <li>YAML sensitif terhadap format dan spasi.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Config YML]]></summary></entry><entry><title type="html">HTML: Link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-list.html" rel="alternate" type="text/html" title="HTML: Link dan List" /><published>2025-03-20T00:00:00+07:00</published><updated>2025-03-20T00:00:00+07:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-list</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-list.html"><![CDATA[<p>Materi tentang link dan lists pada HTML</p>
 
 <p>Materi dasar tentang penggunaan link dan list dalam HTML.</p>
 

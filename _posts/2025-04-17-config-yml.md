@@ -3,8 +3,7 @@ layout: posts
 title: "Config YML"
 date: 2025-04-17
 ---
-
-# Config YML
+Materi tentang Config YML
 
 YAML (YAML Ain't Markup Language) adalah format data yang sering digunakan untuk konfigurasi aplikasi karena sintaksnya yang sederhana dan mudah dibaca manusia.
 

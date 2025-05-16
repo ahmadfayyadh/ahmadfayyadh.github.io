@@ -3,7 +3,7 @@ layout: posts
 title: "Membuat Layout Menggunakan SASS/SCSS"
 date: 2025-05-07
 ---
-# Membuat Layout Menggunakan SASS/SCSS
+Materi tentang Membuat Layout Menggunakan SASS/SCSS
 
 ## Pengantar SASS/SCSS
 
