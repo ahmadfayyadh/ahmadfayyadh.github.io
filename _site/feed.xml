@@ -1,4 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-02T20:13:06+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Halaman Web Responsif</title><link href="http://localhost:4000/2025/05/22/halaman-web-responsif.html" rel="alternate" type="text/html" title="Halaman Web Responsif" /><published>2025-05-22T00:00:00+07:00</published><updated>2025-05-22T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/22/halaman-web-responsif</id><content type="html" xml:base="http://localhost:4000/2025/05/22/halaman-web-responsif.html"><![CDATA[<h1 id="halaman-web-responsif">Halaman Web Responsif</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-02T20:41:36+07:00</updated><id>http://localhost:4000/feed.xml</id><entry><title type="html">Halaman Web Responsif</title><link href="http://localhost:4000/2025/05/22/halaman-web-responsif.html" rel="alternate" type="text/html" title="Halaman Web Responsif" /><published>2025-05-22T00:00:00+07:00</published><updated>2025-05-22T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/22/halaman-web-responsif</id><content type="html" xml:base="http://localhost:4000/2025/05/22/halaman-web-responsif.html"><![CDATA[<p>Materi tentang Halaman Web Responsif</p>
+
+<h1 id="halaman-web-responsif">Halaman Web Responsif</h1>
 
 <h2 id="pengertian">Pengertian</h2>
 
@@ -25,9 +27,11 @@
 <p>Digunakan untuk mengatur skala tampilan di perangkat mobile.</p>
 
 <p>```html</p>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />]]></content><author><name></name></author><summary type="html"><![CDATA[Halaman Web Responsif]]></summary></entry><entry><title type="html">Fitur Ganti Bahasa(i18n)</title><link href="http://localhost:4000/2025/05/15/fitur-ganti-bahasa(i18n).html" rel="alternate" type="text/html" title="Fitur Ganti Bahasa(i18n)" /><published>2025-05-15T00:00:00+07:00</published><updated>2025-05-15T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/15/fitur-ganti-bahasa(i18n)</id><content type="html" xml:base="http://localhost:4000/2025/05/15/fitur-ganti-bahasa(i18n).html"><![CDATA[<h1 id="fitur-ganti-bahasa-i18n">Fitur Ganti Bahasa (i18n)</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Halaman Web Responsif]]></summary></entry><entry><title type="html">Fitur Ganti Bahasa (i18n)</title><link href="http://localhost:4000/2025/05/15/fitur-ganti-bahasa(i18n).html" rel="alternate" type="text/html" title="Fitur Ganti Bahasa (i18n)" /><published>2025-05-15T00:00:00+07:00</published><updated>2025-05-15T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/15/fitur-ganti-bahasa(i18n)</id><content type="html" xml:base="http://localhost:4000/2025/05/15/fitur-ganti-bahasa(i18n).html"><![CDATA[<p>Materi tentang Fitur Ganti Bahasa (i18n)</p>
 
-<h2 id="pengertian-i18n">Pengertian i18n</h2>
+<h1 id="fitur-ganti-bahasa-i18n">Fitur Ganti Bahasa (i18n)</h1>
+
+<h1 id="pengertian-i18n">Pengertian i18n</h1>
 
 <p><strong>i18n</strong> adalah singkatan dari <em>internationalization</em> yang berarti proses menyesuaikan aplikasi agar mendukung berbagai bahasa dan lokal (lokalisasi). Fitur ganti bahasa (i18n) memungkinkan pengguna memilih bahasa tampilan sesuai preferensi mereka.</p>
 
@@ -45,7 +49,7 @@
 
 <h2 id="struktur-folder">Struktur Folder</h2>
 
-<p>Contoh struktur direktori untuk fitur i18n:</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Fitur Ganti Bahasa (i18n)]]></summary></entry><entry><title type="html">Membuat Layout Menggunakan SASS/SCSS</title><link href="http://localhost:4000/2025/05/07/Membuat-Layout-SASS-SCSS.html" rel="alternate" type="text/html" title="Membuat Layout Menggunakan SASS/SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/Membuat-Layout-SASS-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/Membuat-Layout-SASS-SCSS.html"><![CDATA[<p>Materi tentang Membuat Layout Menggunakan SASS/SCSS</p>
+<p>Contoh struktur direktori untuk fitur i18n:</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Fitur Ganti Bahasa (i18n)]]></summary></entry><entry><title type="html">Membuat Layout Menggunakan SASS/SCSS</title><link href="http://localhost:4000/2025/05/07/Membuat-Layout-SASS-SCSS.html" rel="alternate" type="text/html" title="Membuat Layout Menggunakan SASS/SCSS" /><published>2025-05-07T00:00:00+07:00</published><updated>2025-05-07T00:00:00+07:00</updated><id>http://localhost:4000/2025/05/07/Membuat-Layout-SASS-SCSS</id><content type="html" xml:base="http://localhost:4000/2025/05/07/Membuat-Layout-SASS-SCSS.html"><![CDATA[<p>Materi tentang Membuat Layout Menggunakan SASS/SCSS</p>
 
 <h2 id="pengantar-sassscss">Pengantar SASS/SCSS</h2>
 

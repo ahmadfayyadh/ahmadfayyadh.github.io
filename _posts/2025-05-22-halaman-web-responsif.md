@@ -1,3 +1,10 @@
+---
+layout: posts
+title: "Halaman Web Responsif"
+date: 2025-05-22
+---
+Materi tentang Halaman Web Responsif
+
 # Halaman Web Responsif
 
 ## Pengertian
