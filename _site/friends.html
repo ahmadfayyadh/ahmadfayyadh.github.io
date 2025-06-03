@@ -1,21 +1,17 @@
-
-<!-- _layouts/default.html -->
-<!DOCTYPE html>
-<html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Friends</title>
 
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- favicon -->
-  <link rel="icon" href="/assets/images/favicon.icn">
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
 
   <!-- JavaScript -->
-   <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/scripts.js"></script>
 
-  <!-- plugins -->
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" /> 
+  <!-- Plugins -->
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Friends</title>
 <meta name="generator" content="Jekyll v4.4.1" />
@@ -32,33 +28,44 @@
 
 </head>
 <body>
-</body>
-</html>
+  <div class="container">
+    <header>
+      <img src="assets/images/myfoto.jpg" alt="Profile Picture" class="profile-Picture">
+      <h1>Ahmad fayyadh</h1>
+      <p></p>
+    </header>
 
-<body>
-    <nav class="navbar">
-    <div class="nav-container">
+    <nav>
+      <ul>
   
-      <div class="logo">Workshop Web Dasar</div>
+    <li>
+      <a href="/"
+         >
+        Home
+      </a>
+    </li>
   
-      <div class="nav-links">
-        
-          <a href="/" >
-            Home
-          </a>
-        
-          <a href="/friends.html" class="current">
-            friends
-          </a>
-        
-          <a href="/blog.html" >
-            blog
-          </a>
-        
-      </div>
-    </div>
-  </nav>
-    <div class="friends-container">
+    <li>
+      <a href="/friends.html"
+         
+           class="active"
+         >
+        friends
+      </a>
+    </li>
+  
+    <li>
+      <a href="/blog.html"
+         >
+        blog
+      </a>
+    </li>
+  
+</ul>
+    </nav>
+
+    <main>
+      <div class="friends-container">
   <h1>Friends Page</h1>
   <p>Berikut teman-teman saya di kelas:</p>
   <ul class="friend-list">
@@ -93,6 +100,11 @@
   </ul>
 </div>
 
+    </main>
+
+    <footer>
+      <p>&copy; 2025 . All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
-

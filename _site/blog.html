@@ -1,21 +1,17 @@
-
-<!-- _layouts/default.html -->
-<!DOCTYPE html>
-<html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>blog</title>
 
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="/assets/css/styles.css">
 
-  <!-- favicon -->
-  <link rel="icon" href="/assets/images/favicon.icn">
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
 
   <!-- JavaScript -->
-   <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/scripts.js"></script>
 
-  <!-- plugins -->
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" /> 
+  <!-- Plugins -->
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>blog</title>
 <meta name="generator" content="Jekyll v4.4.1" />
@@ -32,101 +28,116 @@
 
 </head>
 <body>
-</body>
-</html>
+  <div class="container">
+    <header>
+      <img src="assets/images/myfoto.jpg" alt="Profile Picture" class="profile-Picture">
+      <h1>Ahmad fayyadh</h1>
+      <p></p>
+    </header>
 
-<body>
-    <nav class="navbar">
-    <div class="nav-container">
+    <nav>
+      <ul>
   
-      <div class="logo">Workshop Web Dasar</div>
+    <li>
+      <a href="/"
+         >
+        Home
+      </a>
+    </li>
   
-      <div class="nav-links">
-        
-          <a href="/" >
-            Home
-          </a>
-        
-          <a href="/friends.html" >
-            friends
-          </a>
-        
-          <a href="/blog.html" class="current">
-            blog
-          </a>
-        
-      </div>
-    </div>
-  </nav>
-    <div class="blog-container">
-  <h1>Blog</h1>
+    <li>
+      <a href="/friends.html"
+         >
+        friends
+      </a>
+    </li>
+  
+    <li>
+      <a href="/blog.html"
+         
+           class="active"
+         >
+        blog
+      </a>
+    </li>
+  
+</ul>
+    </nav>
+
+    <main>
+      <div class="blog-container">
+  <h1 class="blog-title">Blog</h1>
+  <h2 class="blog-subtitle">Blog Kumpulan artikel</h2>
   <ul>
-    
-    <li>
-      <a href="/2025/05/22/halaman-web-responsif.html">Halaman Web Responsif</a>
-      <p>22 May 2025</p>
-      <p><p>Materi tentang Halaman Web Responsif</p>
-</p>    
-    </li>
-    
-    <li>
-      <a href="/2025/05/15/fitur-ganti-bahasa(i18n).html">Fitur Ganti Bahasa (i18n)</a>
-      <p>15 May 2025</p>
-      <p><p>Materi tentang Fitur Ganti Bahasa (i18n)</p>
-</p>    
-    </li>
-    
-    <li>
-      <a href="/2025/05/07/Membuat-Layout-SASS-SCSS.html">Membuat Layout Menggunakan SASS/SCSS</a>
-      <p>07 May 2025</p>
-      <p><p>Materi tentang Membuat Layout Menggunakan SASS/SCSS</p>
-</p>    
-    </li>
-    
-    <li>
-      <a href="/2025/04/24/plugins.html">Plugins</a>
-      <p>24 Apr 2025</p>
-      <p><p>Materi tentang Plugins</p>
-</p>    
-    </li>
-    
-    <li>
-      <a href="/2025/04/17/config-yml.html">Config YML</a>
-      <p>17 Apr 2025</p>
-      <p><p>Materi tentang Config YML</p>
-</p>    
-    </li>
-    
-    <li>
-      <a href="/2025/03/20/html-link-dan-list.html">HTML: Link dan List</a>
-      <p>20 Mar 2025</p>
-      <p><p>Materi tentang link dan lists pada HTML</p>
-</p>    
-    </li>
-    
-    <li>
-      <a href="/2025/03/13/layout-dan-navigation.html">Layout dan Navigasi</a>
-      <p>13 Mar 2025</p>
-      <p><p>Materi tentang Layout dan Navigasi</p>
-</p>    
-    </li>
-    
-    <li>
-      <a href="/2025/03/06/markdown-dan-html.html">Belajar Markdown & HTML</a>
-      <p>06 Mar 2025</p>
-      <p><p>Materi tentang Markdown dan HTML</p>
-</p>    
-    </li>
-    
-    <li>
-      <a href="/2025/02/20/instalasi-ruby-dan-jekyll.html">Instalasi Ruby dan Jekyll</a>
-      <p>20 Feb 2025</p>
-      <p><p>Materi tentang Instalasi Ruby dan Jekyll</p>
-</p>    
-    </li>
-    
-  </ul>
-</div>
+
+<article class="blog-posts">
+  <h2 class="blog-card">
+    <a href="/2025/05/22/halaman-web-responsif.html">Halaman Web Responsif</a>
+  </h2>
+  <p class="post-meta">22 May 2025</p>
+</article>
+
+<article class="blog-posts">
+  <h2 class="blog-card">
+    <a href="/2025/05/15/fitur-ganti-bahasa(i18n).html">Fitur Ganti Bahasa (i18n)</a>
+  </h2>
+  <p class="post-meta">15 May 2025</p>
+</article>
+
+<article class="blog-posts">
+  <h2 class="blog-card">
+    <a href="/2025/05/07/Membuat-Layout-SASS-SCSS.html">Membuat Layout Menggunakan SASS/SCSS</a>
+  </h2>
+  <p class="post-meta">07 May 2025</p>
+</article>
+
+<article class="blog-posts">
+  <h2 class="blog-card">
+    <a href="/2025/04/24/plugins.html">Plugins</a>
+  </h2>
+  <p class="post-meta">24 Apr 2025</p>
+</article>
+
+<article class="blog-posts">
+  <h2 class="blog-card">
+    <a href="/2025/04/17/config-yml.html">Config YML</a>
+  </h2>
+  <p class="post-meta">17 Apr 2025</p>
+</article>
+
+<article class="blog-posts">
+  <h2 class="blog-card">
+    <a href="/2025/03/20/html-link-dan-list.html">HTML: Link dan List</a>
+  </h2>
+  <p class="post-meta">20 Mar 2025</p>
+</article>
+
+<article class="blog-posts">
+  <h2 class="blog-card">
+    <a href="/2025/03/13/layout-dan-navigation.html">Layout dan Navigasi</a>
+  </h2>
+  <p class="post-meta">13 Mar 2025</p>
+</article>
+
+<article class="blog-posts">
+  <h2 class="blog-card">
+    <a href="/2025/03/06/markdown-dan-html.html">Belajar Markdown & HTML</a>
+  </h2>
+  <p class="post-meta">06 Mar 2025</p>
+</article>
+
+<article class="blog-posts">
+  <h2 class="blog-card">
+    <a href="/2025/02/20/instalasi-ruby-dan-jekyll.html">Instalasi Ruby dan Jekyll</a>
+  </h2>
+  <p class="post-meta">20 Feb 2025</p>
+</article>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 . All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
-

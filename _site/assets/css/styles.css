@@ -1,5 +1,5 @@
 .last_name {
-  color: #3b7b3a;
+  color: #313f5d;
 }
 
 body,
@@ -21,7 +21,7 @@ header {
   text-align: center;
   padding: 24px;
   color: #fff;
-  background: linear-gradient(135deg, #4a7c59, #5d8a6a);
+  background: linear-gradient(135deg, #16142f, #1d2677);
 }
 
 main {
@@ -36,7 +36,7 @@ footer {
   padding: 8px;
   margin-top: 24px;
   color: #fff;
-  background-color: #3b7b3a;
+  background-color: #313f5d;
 }
 
 h2 {
@@ -52,7 +52,7 @@ nav ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: linear-gradient(135deg, #4a7c59, #5d8a6a);
+  background: linear-gradient(135deg, #000000, #000000);
 }
 nav li {
   float: left;
