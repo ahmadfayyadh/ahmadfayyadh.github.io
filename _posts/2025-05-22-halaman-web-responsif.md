@@ -22,12 +22,4 @@ Responsif berarti konten tetap mudah dibaca dan dinavigasi tanpa perlu memperbes
 - Menghemat biaya pengembangan karena **satu desain untuk semua perangkat**.
 - Adaptif terhadap **perkembangan teknologi perangkat**.
 
----
-
-## Teknik Membuat Halaman Web Responsif
-
-### 1. **Viewport Meta Tag**
-Digunakan untuk mengatur skala tampilan di perangkat mobile.
-
-```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

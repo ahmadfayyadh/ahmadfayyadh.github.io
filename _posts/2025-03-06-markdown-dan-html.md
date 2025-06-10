@@ -48,15 +48,7 @@ _Miring_
 2. Kedua
 
 
-#### 4. Link dan Gambar
-
-
-[Klik Link Ini](https://m-zakifahrezi.github.io/OnlyJack.com/)
-
-![Gambar](/assets/images/coding.png)
-
-
-#### 5. Code Block
+#### 4. Code Block
 
 
 
@@ -87,7 +79,7 @@ HTML digunakan untuk:
   <body>
     <h1>Halo Dunia</h1>
     <p>Ini paragraf pertama saya.</p>
-    <a href="https://www.instagram.com/zkyy.frezy?igsh=MXB3N21zbm44ZjdwNw==">Kunjungi media sosial saya</a>
+    <a href="https://www.instagram.com/ahdfayyadh/?next=%2F==">Kunjungi media sosial saya</a>
   </body>
 </html>
 

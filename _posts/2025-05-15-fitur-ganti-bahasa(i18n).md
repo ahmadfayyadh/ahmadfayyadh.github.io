@@ -19,9 +19,4 @@ Materi tentang Fitur Ganti Bahasa (i18n)
 - Meningkatkan kenyamanan dan aksesibilitas.
 - Menunjang profesionalisme aplikasi atau situs web.
 
----
-
-## Struktur Folder
-
-Contoh struktur direktori untuk fitur i18n:
 

@@ -60,7 +60,7 @@ Navigasi yang baik memudahkan pengguna menemukan informasi dengan cepat.
   <ul>
     <li><a href="/">Beranda</a></li>
     <li><a href="/tentang">Tentang</a></li>
-    <li><a href="/kontak">Kontak</a></li>
+    <li><a href="/https://https://web.whatsapp.comhttps//web.whatsapp.com/">Kontak</a></li>
   </ul>
 </nav>
 
